@@ -1,0 +1,19 @@
+.container {
+    border: 2px solid goldenrod;
+    width: 320px;
+    margin: 10px 10px;
+    box-shadow: 3px 3px 5px darkorchid;
+    border-radius: 10px;
+}
+.image {
+    border: 1px solid blue;
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px darkorchid;
+}
+.details {
+    margin-left: 5px;
+}
+.list {
+    text-decoration: none;
+}

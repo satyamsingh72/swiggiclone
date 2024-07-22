@@ -1,0 +1,25 @@
+.container {
+    border: 2px solid goldenrod;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px darkorchid;   
+  }
+  .nav {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list {
+    margin-left: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+  }
+  .image {
+    height: 150px;
+    width: 150px;
+  }

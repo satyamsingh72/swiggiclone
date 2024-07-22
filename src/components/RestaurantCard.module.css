@@ -1,0 +1,17 @@
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button {
+    margin: 10px;
+
+}
+.shimm {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainBody {
+    background-color: bisque;
+    margin-top: 10px;
+    border-radius: 10px;
+}
