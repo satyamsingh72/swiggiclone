@@ -1,0 +1,17 @@
+.container {
+    width: 800px;
+    background-color: rgb(221, 221, 242);
+    box-shadow: 3px 3px 5px darkorchid;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#row {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+.minicontainer {
+    display: flex;
+    justify-content: space-between;
+}

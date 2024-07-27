@@ -3,5 +3,8 @@
     flex-wrap: wrap;
 }
 ul {
-    text-decoration: none;
+   list-style-type: none;;
+}
+.para {
+    font-weight: 1000;
 }

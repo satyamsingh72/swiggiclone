@@ -22,17 +22,17 @@ const Header = () => {
           Online Status: {onlineCurrStatus ? <IoEyeSharp /> : <FaEyeSlash />}
         </li>
         <li className={style.list}>
-          <Link to="/">Home</Link>
+          <Link to="/" className={style.deco}>Home</Link>
         </li>
         <li className={style.list}>
-          <Link to="/grocery">Grocery</Link>
+          <Link to="/grocery" className={style.deco}>Grocery</Link>
         </li>
         <li className={style.list}>
-          <Link to="/about">About</Link>
+          <Link to="/about" className={style.deco}>About</Link>
         </li>
         <li className={style.list}>Services</li>
         <li className={style.list}>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className={style.deco}>Contact</Link>
         </li>
         <li
           className={style.list}

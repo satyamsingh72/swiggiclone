@@ -1,4 +1,5 @@
 import style from "./RestaurantList.module.css";
+import { FcRating } from "react-icons/fc";
 
 const RestaurantList = ({ resData }) => {
   const { name, avgRating, cuisines, costForTwo } = resData?.info;
@@ -10,10 +11,10 @@ const RestaurantList = ({ resData }) => {
         alt="Logo"
       /></center>
       <div className={style.details}>
-      <h1 className={style.list}>{name}</h1>
-      <h2 className={style.list}>Rating: {avgRating}</h2>
-      <h3 className={style.list}>{cuisines.join(", ")}</h3>
-      <h4 className={style.list}>{costForTwo}</h4>
+      <h1>{name}</h1>
+      <span><h2>Rating: {avgRating} <FcRating /></h2></span>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{costForTwo}</h4>
       </div>
     </div>
   );

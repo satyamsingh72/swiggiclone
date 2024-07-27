@@ -71,7 +71,7 @@ const RestaurantCard = () => {
       </button>
       <div className={style.body}>
         {filteredRes.map((resObj) => (
-          <Link key={resObj.info.id} to={"/menu/" + resObj.info.id}>
+          <Link key={resObj.info.id} to={"/menu/" + resObj.info.id} className={style.list}>
             {" "}
             <RestaurantList resData={resObj} />
           </Link>
