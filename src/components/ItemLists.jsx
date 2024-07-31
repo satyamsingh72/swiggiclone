@@ -4,12 +4,12 @@ const ItemLists = ({ items }) => {
   return (
     <div>
       {items.map((c) => (
-        <div class={style.container}>
-          <div >
-            <span>{c.card.info.name}</span>{" "}
-            <span>Rs.{c.card.info.price / 100}</span>
+        <div className={style.container} key={c.card.info.id}>
+          <div className={style.slot}>
+            <div className={style.miniContainer}>{c.card.info.name} {" "} Rs.{c.card.info.price / 100}</div><br/>
+            <p className={style.discription}>{c.card.info.description}</p>
           </div>
-          <span>{c.card.info.description}</span>
+          
         </div>
       ))}
     </div>

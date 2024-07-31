@@ -9,9 +9,11 @@
 #row {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 1000;
+    font-size: large;
 }
 
 .minicontainer {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }

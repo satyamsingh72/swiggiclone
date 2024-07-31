@@ -2,3 +2,14 @@
     border-bottom: 1px solid rgb(110, 108, 108);
     padding-top: 10px;
 }
+.miniContainer {
+    text-align: left;
+    margin: 2px 0px;
+    font-size: medium;
+    font-weight: 600;
+}
+p {
+    text-align: left;
+    margin: 2px 0px;
+}
+

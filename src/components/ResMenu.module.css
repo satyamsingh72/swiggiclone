@@ -7,4 +7,6 @@ ul {
 }
 .para {
     font-weight: 1000;
+    font-size: larger;
+    text-align: center;
 }
