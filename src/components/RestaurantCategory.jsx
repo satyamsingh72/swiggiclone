@@ -2,11 +2,10 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import style from "./RestaurantCategory.module.css";
 import ItemLists from "./ItemLists";
 import { useState } from "react";
-const Restaurantcategory = ({data}) => {
-    const [showItems, setShowItems] = useState(false);
-    //console.log(data)
+const Restaurantcategory = ({data, showItems, setShowIndex}) => {
+    
     const handleClick = () => {
-        setShowItems(!showItems);
+        setShowIndex();
     }
     return (
         <div className={style.container}>
@@ -16,7 +15,6 @@ const Restaurantcategory = ({data}) => {
             </span>
             </div>
             {showItems && <ItemLists items={data.itemCards}></ItemLists>}
-            
         </div>
     )
 }

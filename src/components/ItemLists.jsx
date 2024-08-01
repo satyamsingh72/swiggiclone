@@ -1,6 +1,5 @@
 import style from "./ItemLists.module.css"
 const ItemLists = ({ items }) => {
-  console.log(items);
   return (
     <div>
       {items.map((c) => (

@@ -7,6 +7,7 @@ import { FcRating } from "react-icons/fc";
 import Restaurantcategory from "./RestaurantCategory";
 
 const ResMenu = () => {
+  const [showIndex, setShowIndex] = useState(0);
   const [resInfo, setResInfo] = useState(null);
   const { resId } = useParams();
   useEffect(() => {
@@ -40,7 +41,7 @@ const ResMenu = () => {
         c?.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
-  //console.log(categories); 
+  //console.log(categories);
   return (
     <center>
       <h2>{name}</h2>
@@ -49,7 +50,14 @@ const ResMenu = () => {
         <FcRating /> || {locality} || {costForTwoMessage}
       </p>
       <h4>Menu</h4>
-      {categories.map((categ) => (<Restaurantcategory data={categ?.card?.card}/>))}
+      {categories.map((categ, index) => (
+        <Restaurantcategory
+          key={categ?.card?.card?.title}
+          data={categ?.card?.card}
+          showItems={index === showIndex ? true : false}
+          setShowIndex={() => setShowIndex(index)}
+        />
+      ))}
       {/* <ul>
         {itemCards.map((list) => (
           <li key={list.card.info.id}>
