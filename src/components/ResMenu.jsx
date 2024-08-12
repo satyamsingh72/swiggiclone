@@ -7,7 +7,7 @@ import { FcRating } from "react-icons/fc";
 import Restaurantcategory from "./RestaurantCategory";
 
 const ResMenu = () => {
-  const [showIndex, setShowIndex] = useState(0);
+  const [showIndex, setShowIndex] = useState(null);
   const [resInfo, setResInfo] = useState(null);
   const { resId } = useParams();
   useEffect(() => {

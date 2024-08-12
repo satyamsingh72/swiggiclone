@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaEyeSlash } from "react-icons/fa";
+import { useSelector } from "react-redux";
 const Header = () => {
   const [initialButton, setInitialButton] = useState("Sign In");
   const onlineCurrStatus = useOnlineStatus();
   let Yes = "yes";
   let No = "no";
-
+  const cartItems = useSelector((store) => store.cart.items);
   return (
     <nav className={style.container}>
       <img
@@ -22,17 +23,28 @@ const Header = () => {
           Online Status: {onlineCurrStatus ? <IoEyeSharp /> : <FaEyeSlash />}
         </li>
         <li className={style.list}>
-          <Link to="/" className={style.deco}>Home</Link>
+          <Link to="/" className={style.deco}>
+            Home
+          </Link>
         </li>
         <li className={style.list}>
-          <Link to="/grocery" className={style.deco}>Grocery</Link>
+          <Link to="/grocery" className={style.deco}>
+            Grocery
+          </Link>
         </li>
         <li className={style.list}>
-          <Link to="/about" className={style.deco}>About</Link>
+          <Link to="/about" className={style.deco}>
+            About
+          </Link>
         </li>
         <li className={style.list}>Services</li>
         <li className={style.list}>
-          <Link to="/contact" className={style.deco}>Contact</Link>
+          <Link to="/contact" className={style.deco}>
+            Contact
+          </Link>
+        </li>
+        <li className={style.list}>
+          <Link to="/cart" className={style.deco}>Cart {cartItems.length}</Link>
         </li>
         <li
           className={style.list}

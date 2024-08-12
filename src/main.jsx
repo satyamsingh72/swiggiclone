@@ -8,6 +8,7 @@ import Error from "./components/Error.jsx";
 import RestaurantCard from "./components/RestaurantCard.jsx";
 import ResMenu from "./components/ResMenu.jsx";
 import { lazy } from "react";
+import Cart from "./components/Cart.jsx";
 
 const Grocery = lazy(() => import("./components/Grocery.jsx"));
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "/", element: <RestaurantCard /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      { path:"/cart", element: <Cart/>},
       {
         path: "/grocery",
         element: (
