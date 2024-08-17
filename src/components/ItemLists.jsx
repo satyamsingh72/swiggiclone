@@ -12,7 +12,10 @@ const ItemLists = ({ items }) => {
         <div className={style.container} key={c.card.info.id}>
           <div className={style.slot}>
             <div className={style.miniContainer}>
-              {c.card.info.name} Rs.{c.card.info.price / 100} <button className={style.btn} onClick={() => handleAddItem(c)}>Add+</button>
+              {c.card.info.name} Rs.{c.card.info.price / 100}{" "}
+              <button className={style.btn} onClick={() => handleAddItem(c)}>
+                Add+
+              </button>
             </div>
             <br />
             <p className={style.discription}>{c.card.info.description}</p>
